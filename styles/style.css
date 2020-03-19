@@ -1,31 +1,209 @@
+h2, h3, h4 {
+  margin: 0px;
+}
+
 .page {
-    min-width: 1100px;
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
-    max-width: 1600px;
-    /* выше установили ограничение по максимальной ширине */
-    margin: 0 auto;
-    /* выше для экранов больше 1600px отцентрировали весь контент */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.vertical-spacing {
+  margin-bottom: 20px;
 }
 
 .header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
-    /* выше установили ограничения для секции */
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  position: relative;
+  /* установили position для абсолютного позиционирования дочерних элементов */
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.logo_color_white {
+  background-image: url(../images/logo_white.svg);
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/two_again.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-    height: 568px;
-    width: 568px;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  /* ниже два свойства, чтобы перекрыть синий квадрат в шапке
+  при уменьшении высоты браузера */
+  position: relative;
+  background-color: white;
+  /* используем padding вместо margin, чтобы в отступе был фон */
+  padding-top: 100px;
+  /* нижний margin, чтобы сетка была, как в задании */
+  margin-bottom: 100px;
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  /* Отступ сверху, чтобы визуально выравнять с текстом справа.
+  Отступ справа, чтобы при уменьшении окна барузера тексты не сливались. */
+  margin: 5px 30px 0 0;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  /* Я бы уменьшил min-width на размер margin-right у two-columns__brief,
+  чтобы two-columns__main-text не выезжал за пределы контейнера и не портил центровку */
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0 0 30px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digits {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 255px;
+  margin-top: 60px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+div, h2, h3 {
+  border: 1px solid red;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
