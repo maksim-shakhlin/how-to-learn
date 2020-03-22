@@ -394,6 +394,10 @@
   margin: 0;
 }
 
+.footer__column-link:hover{
+  color: #2f80ed;
+}
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
