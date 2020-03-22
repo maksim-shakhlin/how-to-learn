@@ -10,6 +10,142 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+/* Independent blocks */
+
+
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_white.svg);
+}
+
+/* --------------------------------------- */
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  /* Отступ справа, чтобы при уменьшении окна барузера тексты не сливались */
+  /* Отступ сверху, чтобы визуально выравнять по горизонтали с текстом справа */
+  margin: 5px 30px 0 0;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  /* уменьшил min-width на размер margin-right у two-columns__brief,
+   чтобы two-columns__main-text не выезжал за пределы контейнера и не портил центровку*/
+  min-width: 754px;
+}
+
+.two-columns__paragraph {
+  margin: 0 0 30px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+/* --------------------------------------- */
+
+.section-title {
+  margin: 0;
+  width: 60%;
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+/* --------------------------------------- */
+
+.section-subtitle {
+  margin: 0;
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+/* --------------------------------------- */
+
+.table {
+  margin: 0;
+  max-width: 1100px;
+  min-width: 1060px;
+  /* отступ, чтобы текст не упирался в края при минимальной ширине */
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.table_theme_dark {
+  color: white;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}
+
+.table__heading {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 20px 0 0;
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
 
 
 /* Header */
@@ -28,23 +164,11 @@
   overflow: hidden;
 }
 
-.logo {
-  width: 183px;
-  height: 32px;
-  background-image: url(../images/logo.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.logo_place_header {
+.header__logo {
   position: absolute;
   top: 30px;
   left: 64px;
-}
-
-.logo_place_footer {
-  background-image: url(../images/logo_white.svg);
+  z-index: 1;
 }
 
 .header__title {
@@ -95,6 +219,9 @@
   right: 0px;
 }
 
+/* --------------------------------------- */
+/* --------------------------------------- */
+
 
 
 /* Description */
@@ -103,55 +230,10 @@
 .description {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
 }
 
-
-/* Я бы уменьшил min-width у two-columns__main-text на размер margin-right у two-columns__brief,
-  чтобы two-columns__main-text не выезжал за пределы контейнера и не портил центровку.
-  Но чтобы все было как в задании, min-width не трогал.
-  Для сохранения красоты меняем направления флекса, возвращаем порядок через order.
-  Теперь при минимальной ширине окна за пределы контейнера выталкивается brief.
-  У него маленький оптический вес, поэтому визуально центровка не страдает. */
-
-.two-columns {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.two-columns__brief {
-  width: 175px;
-  /* Отступ справа, чтобы при уменьшении окна барузера тексты не сливались */
-  /* Отступ сверху, чтобы визуально выравнять по горизонтали с текстом справа */
-  margin: 5px 30px 0 0;
-  color: #2f80ed;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: normal;
-  order: 1;
-}
-
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-}
-
-.two-columns__paragraph {
-  margin: 0 0 30px;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-}
-
-.two-columns__paragraph:last-of-type {
-  margin: 0;
-}
-
-.two-columns__span-accent {
-  font-weight: bold;
-}
+/* --------------------------------------- */
+/* --------------------------------------- */
 
 
 
@@ -159,77 +241,18 @@
 
 
 .digits {
-  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section-title {
-  margin: 0;
-  width: 60%;
-  font-size: 60px;
-  line-height: 69px;
-  font-weight: bold;
-  text-align: center;
+.digits__section-title {
+  margin-bottom: 20px;
 }
 
-.section-title_theme_dark {
-  color: white;
-}
 
-.section-subtitle {
-  margin: 0;
-  width: 60%;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.section-subtitle_theme_dark {
-  color: white;
-}
-
-.table {
-  margin: 0;
-  max-width: 1100px;
-  min-width: 1060px;
-  /* отступ, чтобы текст не упирался в края при минимальной ширине */
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.table_theme_dark {
-  color: white;
-}
-
-.table__cell {
-  width: 255px;
-  margin-top: 60px;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  margin-top: 80px;
-}
-
-.table__heading {
-  margin: 0;
-  font-size: 24px;
-  line-height: 1.15;
-  font-weight: bold;
-}
-
-.table__text {
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: normal;
-  margin: 20px 0 0;
-}
+/* --------------------------------------- */
+/* --------------------------------------- */
 
 
 
@@ -277,6 +300,9 @@
   color: #2f80ed;
 }
 
+/* --------------------------------------- */
+/* --------------------------------------- */
+
 
 
 /* Kaufman */
@@ -287,13 +313,16 @@
   position: relative;
   background-color: #1f1f1f;
   overflow: hidden;
-}
-
-.kaufman__main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+}
+
+.kaufman__section-title {
+  margin-bottom: 20px;
+}
+
+.kaufman__item {
   z-index: 1;
 }
 
@@ -305,7 +334,11 @@
   right: -210px;
   background: url(../images/triangle.svg) center no-repeat;
   background-size: contain;
+  z-index: 0;
 }
+
+/* --------------------------------------- */
+/* --------------------------------------- */
 
 
 
@@ -342,7 +375,6 @@
   line-height: 25px;
 }
 
-
 .footer__column-heading {
   margin: 0;
   font-size: 18px;
@@ -369,21 +401,14 @@
   vertical-align: -5%;
 }
 
+/* --------------------------------------- */
+/* --------------------------------------- */
 
 
-/* Layout stuff */
+
+/* Content */
 
 
-/* в самом низу, чтобы наверняка переопределяло */
-.bottom-indent {
-  margin-bottom: 20px;
+.content__item {
+  margin: 100px auto;
 }
-
-
-
-/* Dev stuff */
-
-
-/* * {
-  border: 1px solid red;
-} */
