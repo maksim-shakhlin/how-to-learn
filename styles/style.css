@@ -26,6 +26,13 @@
   background-repeat: no-repeat;
 }
 
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
 .logo_place_footer {
   background-image: url(../images/logo_white.svg);
 }
@@ -162,13 +169,6 @@
   align-items: center;
   /* чтобы синий квадрат не выходил за пределы шапки при малой высоте браузера */
   overflow: hidden;
-}
-
-.header__logo {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 1;
 }
 
 .header__title {
@@ -323,7 +323,7 @@
   z-index: 1;
 }
 
-/* От kaiufman__item избавились, но позиционировать-то надо) */
+/* От kaufman__item избавились, но позиционировать-то надо) */
 
 .kaufman__subtitle {
   z-index: 1;
