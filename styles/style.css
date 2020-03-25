@@ -206,8 +206,8 @@
   background-image: url(../images/two_again.png);
   background-size: cover;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
 }
 
 .header__square-pic {
@@ -216,7 +216,7 @@
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 0;
 }
 
 /* --------------------------------------- */
@@ -320,9 +320,16 @@
 
 .kaufman__section-title {
   margin-bottom: 20px;
+  z-index: 1;
 }
 
-.kaufman__item {
+/* От kaiufman__item избавились, но позиционировать-то надо) */
+
+.kaufman__subtitle {
+  z-index: 1;
+}
+
+.kaufman__table {
   z-index: 1;
 }
 
@@ -395,7 +402,7 @@
 }
 
 .footer__column-link:hover{
-  color: #2f80ed;
+  text-decoration: underline;
 }
 
 .footer__social-icon {
@@ -405,6 +412,11 @@
   vertical-align: -5%;
 }
 
+/* вроде БЭМ допускает такое, но от греха подальше отключу :) */
+/* .footer__column-link:hover .footer__social-icon {
+  filter: brightness(150%);
+} */
+
 /* --------------------------------------- */
 /* --------------------------------------- */
 
@@ -412,7 +424,12 @@
 
 /* Content */
 
+/* и два класса вместо content__item */
 
-.content__item {
+.content__description {
+  margin: 100px auto;
+}
+
+.content__digits {
   margin: 100px auto;
 }
