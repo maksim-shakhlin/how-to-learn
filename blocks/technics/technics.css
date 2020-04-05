@@ -1,0 +1,8 @@
+@import url(./__section-title/technics__section-title.css);
+@import url(../cards/cards.css);
+
+.technics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  /* описанная около треугольника окружность заходит за блок на 7 пикселей */
+  /* сделаем, чтобы при вращении вершины треугольника не обрубались*/
+  top: 7px;
+  right: -210px;
+  background: url(../../../images/kaufman/triangle.svg) center no-repeat;
+  background-size: contain;
+  z-index: 0;
+  /* немного математики, чтобы центр вращения поместить в центр треугольника */
+  transform-origin: 58.238% 42.855%;
+  animation: rotation 20s linear infinite;
+}

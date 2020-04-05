@@ -1,0 +1,7 @@
+.video__iframes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  /* я бы лучше задал этот марджин для content__video, но тогда граница блока будет не такая, как в брифе */
+  margin-bottom: -50px;
+}

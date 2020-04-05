@@ -1,0 +1,4 @@
+/* селектор мультикласса, чтобы не ломалось из-за повторного импорта section-title.css в kaufman.css */
+.section-title.video__section-title {
+  margin-bottom: 20px;
+}

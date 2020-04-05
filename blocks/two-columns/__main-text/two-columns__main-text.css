@@ -1,0 +1,6 @@
+.two-columns__main-text {
+  width: 80%;
+  /* уменьшил min-width на размер margin-right у two-columns__brief,
+   чтобы two-columns__main-text не выезжал за пределы контейнера и не портил центровку*/
+  min-width: 754px;
+}
