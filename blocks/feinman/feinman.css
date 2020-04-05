@@ -4,9 +4,8 @@
 
 .feinman {
   position: relative;
-  height: 790px;
+  min-height: 790px;
   text-align: center;
-  background: #f2f2f2 url(../../images/feinman/feinman.png) bottom no-repeat;
+  background: #f2f2f2 url(../../images/feinman/feinman.png) left bottom no-repeat;
   background-size: 867px 637px;
-  background-position-x: left;
 }

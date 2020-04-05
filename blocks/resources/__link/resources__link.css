@@ -1,16 +1,8 @@
-.feinman__link {
-  font-size: 36px;
-  line-height: 51px;
-  font-weight: normal;
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  text-decoration: none;
+.resources__link {
   transition: opacity .3s ease-in;
 }
 
-.feinman__link:hover {
+.resources__link:hover {
   opacity: .5;
   /* убираю транзишн, хотя он не лишний */
   /* просто разное поведение при наведении и «отведении» :) */

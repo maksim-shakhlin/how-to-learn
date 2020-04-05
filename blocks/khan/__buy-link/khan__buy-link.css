@@ -4,4 +4,12 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity .3s ease-in;
+}
+
+.khan__buy-link:hover {
+  opacity: .5;
+  /* убираю транзишн, хотя он не лишний */
+  /* просто разное поведение при наведении и «отведении» :) */
+  /* transition: opacity .1s ease-out; */
 }

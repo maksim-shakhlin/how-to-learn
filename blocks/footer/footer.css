@@ -1,5 +1,3 @@
-@import url(../logo/logo.css);
-@import url(../logo/_place/logo_place_footer.css);
 @import url(./__columns/footer__columns.css);
 @import url(./__column/_content/footer__column_content_copyright.css);
 @import url(./__column-heading/footer__column-heading.css);

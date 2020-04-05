@@ -2,4 +2,12 @@
   text-decoration: none;
   color: white;
   margin: 0;
+  transition: opacity .3s ease-in;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
+  /* убираю транзишн, хотя он не лишний */
+  /* просто разное поведение при наведении и «отведении» :) */
+  /* transition: opacity .1s ease-out; */
 }

@@ -1,5 +1,6 @@
 .resources__logo-zone {
     width: 1200px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
 }

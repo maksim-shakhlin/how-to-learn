@@ -21,13 +21,18 @@
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="header__link link" href="#technics">Узнать &rarr;</a>
+          <a class="header__link" href="#technics">Узнать &rarr;</a>
         </p>
-        <div class="header__square-pic"></div>
-        <div class="header__main-illustration"></div>
+        <div class="header__square-pic rotation"></div>
+        <img
+          src="./images/header/two_again.png"
+          alt="Коллаж картины Фёдора Решетникова «Опять двойка»"
+          class="header__main-illustration"
+        />
       </header>
       <main class="content">
         <section class="description content__description">
+          <!-- Оставил div, потому что иначе заголовок переходит в article, и валидатор делает атата, что section без заголовка -->
           <div class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в&nbsp;обучении</h2>
             <div class="two-columns__main-text">
@@ -52,7 +57,7 @@
           </div>
         </section>
         <section class="technics content__technics" id="technics">
-          <h2 class="section-title technics__section-title">
+          <h2 class="section-title">
             Техники обучения
           </h2>
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
@@ -120,8 +125,8 @@
           </ul>
         </section>
         <section class="video content__video">
-          <h2 class="section-title video__section-title">Видео на TED</h2>
-          <p class="section-subtitle video__section-subtitle">
+          <h2 class="section-title">Видео на TED</h2>
+          <p class="section-subtitle">
             Для тех, кто любит прокрастинировать
           </p>
           <div class="video__iframes">
@@ -158,7 +163,7 @@
           <h2 class="feinman__title">Метод Фейнмана</h2>
           <p class="feinman__subtitle">Выучить и не забыть.</p>
           <a
-            class="feinman__link link"
+            class="feinman__link"
             href="https://medium.com/bazanov-org/метод-обучения-фейнмана-6abe6915ef8a"
             target="_blank"
             rel="noopener"
@@ -166,7 +171,7 @@
           >
         </section>
         <section class="digits content__digits">
-          <h2 class="section-title digits__section-title">Цифры и факты</h2>
+          <h2 class="section-title">Цифры и факты</h2>
           <p class="section-subtitle">Про учёбу и мозг</p>
           <ul class="table">
             <li class="table__cell">
@@ -233,7 +238,7 @@
                 class="khan__book-pic"
               />
               <a
-                class="khan__buy-link link"
+                class="khan__buy-link"
                 href="https://www.ozon.ru/context/detail/id/31700837/"
                 target="_blank"
                 rel="noopener"
@@ -244,16 +249,16 @@
         </section>
         <section class="kaufman">
           <h2
-            class="section-title section-title_theme_dark kaufman__section-title"
+            class="section-title section-title_theme_dark"
           >
             Принципы обучения
           </h2>
           <p
-            class="section-subtitle section-subtitle_theme_dark kaufman__section-subtitle"
+            class="section-subtitle section-subtitle_theme_dark"
           >
             от Джоша Кауфмана
           </p>
-          <ul class="table table_theme_dark kaufman__table">
+          <ul class="table table_theme_dark">
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">1</h3>
               <p class="table__text table__text_theme_dark">
@@ -315,38 +320,58 @@
               </p>
             </li>
           </ul>
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
         </section>
         <section class="resources content__resources">
-          <h2 class="section-title resources__section-title">
+          <h2 class="section-title">
             Полезные ресурсы
           </h2>
-          <p class="section-subtitle resources__section-subtitle">
+          <p class="section-subtitle">
             Больше материалов о техниках и лайфхаках обучения
           </p>
           <div class="resources__logo-zone">
-            <a href="https://arzamas.academy/" class="link" target="_blank" rel="noopener" >
+            <a
+              href="https://arzamas.academy/"
+              class="resources__link"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="./images/resources/arzamas.svg"
                 alt="Arzamas"
                 class="resources__logo"
               />
             </a>
-            <a href="https://nplus1.ru/" class="link" target="_blank" rel="noopener" >
+            <a
+              href="https://nplus1.ru/"
+              class="resources__link"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="./images/resources/n1.svg"
                 alt="N+1"
                 class="resources__logo"
               />
             </a>
-            <a href="https://strelkamag.com/ru/" class="link" target="_blank" rel="noopener" >
+            <a
+              href="https://strelkamag.com/ru/"
+              class="resources__link"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="./images/resources/strelka.svg"
                 alt="STRELKA"
                 class="resources__logo"
               />
             </a>
-            <a href="https://polka.academy/" class="link" target="_blank" rel="noopener" >
+            <a
+              href="https://polka.academy/"
+              class="resources__link"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="./images/resources/polka.svg"
                 alt="ПОЛКА"
@@ -367,7 +392,7 @@
             <ul class="footer__column-links">
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://praktikum.yandex.ru/"
                   target="_blank"
                   rel="noopener"
@@ -376,7 +401,7 @@
               </li>
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://ru.wikipedia.org/wiki/Яндекс.Практикум#Особенности_обучения"
                   target="_blank"
                   rel="noopener"
@@ -385,7 +410,7 @@
               </li>
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://praktikum.yandex.ru/promo/mentors-school/"
                   target="_blank"
                   rel="noopener"
@@ -399,7 +424,7 @@
             <ul class="footer__column-links">
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://www.facebook.com/yandex.praktikum/"
                   target="_blank"
                   rel="noopener"
@@ -413,7 +438,7 @@
               </li>
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://vk.com/yandex.praktikum/"
                   target="_blank"
                   rel="noopener"
@@ -427,7 +452,7 @@
               </li>
               <li>
                 <a
-                  class="footer__column-link link"
+                  class="footer__column-link"
                   href="https://www.instagram.com/yndx.praktikum/"
                   target="_blank"
                   rel="noopener"
