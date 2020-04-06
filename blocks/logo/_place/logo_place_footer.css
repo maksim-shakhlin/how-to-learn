@@ -1,3 +1,4 @@
-.logo_place_footer {
+ /* чтобы не переопределялось при импорте */
+.logo.logo_place_footer {
   background-image: url(../../../images/logo/logo_white.svg);
 }
