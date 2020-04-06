@@ -4,7 +4,5 @@
 
 .resources__link:hover {
   opacity: .5;
-  /* убираю транзишн, хотя он не лишний */
-  /* просто разное поведение при наведении и «отведении» :) */
-  /* transition: opacity .1s ease-out; */
+  transition: opacity .1s ease-out;
 }
